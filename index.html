@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Balmeet Singh Chadha | Portfolio</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar">
+    <div class="logo">BALMEET</div>
+    <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><button id="theme-toggle">🌙</button></li>
+    </ul>
+</nav>
+
+<!-- HERO -->
+<section id="home" class="hero">
+    <div class="hero-content">
+        <img src="2.jpeg" alt="Profile" class="profile-img">
+        <h1><span>BALMEET SINGH CHADHA</span></h1>
+        <p class="typing"></p>
+        <a href="mailto:balmeetsinghchadha8@gmail.com" class="btn">Hire Me</a>
+    </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about" class="fade-in">
+    <h2>About Me</h2>
+    <p>
+        I'm a dedicated Computer Science Engineering student currently pursuing my B.Tech in CSE (AI/ML) at IILM University. I work confidently across Java, Python, and C, and enjoy applying that foundation to real AI/ML problems — from deepfake detection to automated transcription. My hands-on experience spans two internships: one with Infosys and one with Edunet Foundation (in association with AICTE &amp; IBM), where I built an employee salary prediction model and an automated podcast transcription system that converts speech to text. Beyond coursework, I've built independent projects like a Deepfake Detection system and an AI-powered Resume Checker &amp; Builder, and I stay active through hackathons, tech fests, and debate competitions. I'm naturally curious about space exploration and emerging AI technologies, and I bring that same curiosity into every project I work on.
+    </p>
+
+    <h2>Education</h2>
+    <ul class="edu-list">
+        <li>B.Tech CSE AI/ML | IILM University</li>
+        <li>12th | 80%</li>
+        <li>10th | 90%</li>
+    </ul>
+
+    <h2>Skills</h2>
+    <div class="skills-container">
+        <div class="skill-tag"><i class="fab fa-python"></i> Python</div>
+        <div class="skill-tag"><i class="fab fa-java"></i> Java</div>
+        <div class="skill-tag"><i class="fas fa-leaf"></i> Django</div>
+        <div class="skill-tag"><i class="fas fa-brain"></i> TensorFlow</div>
+        <div class="skill-tag"><i class="fas fa-fire"></i> PyTorch</div>
+        <div class="skill-tag"><i class="fas fa-robot"></i> AI/ML</div>
+    </div>
+
+    <div class="skill-bars">
+        <div class="skill-bar">
+            <p>Java</p>
+            <div class="bar"><div style="width:92%"></div></div>
+        </div>
+        <div class="skill-bar">
+            <p>Python</p>
+            <div class="bar"><div style="width:80%"></div></div>
+        </div>
+        <div class="resume-snippet" onclick="openResumeModal()" title="Click to preview resume">
+            <img src="resume-thumb.png" alt="Resume preview" class="resume-thumb">
+            <div class="resume-snippet-overlay">
+                <i class="fas fa-eye"></i>
+                <span>RESUME</span>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- EXPERIENCE -->
+<section id="experience" class="fade-in">
+    <h2>Experience</h2>
+
+    <div class="card">
+        <h3>AI Intern | Infosys</h3>
+        <span class="date">2025</span>
+        <p>Worked on an AI/ML internship focused on Python-based audio processing, building an automated podcast transcription system using Whisper and PyTorch. The tool converts speech to text and can be extended into a summarization feature for longer audio content.</p>
+    </div>
+
+    <div class="card">
+        <h3>Backend Developer - Intern | EDUNET Foundation (AICTE)</h3>
+        <span class="date">May 2025 – August 2025</span>
+        <p>Completed AI/ML in Python with employee salary prediction project using Git and Gemini for code correction. Analyzed various algorithms to predict salary on parameters like age, qualification and skills — best accuracy via Random Forest &amp; CNN.</p>
+    </div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects" class="fade-in">
+    <h2>Projects</h2>
+
+    <div class="project-grid">
+
+        <!-- FIXED CARD -->
+        <div class="project-card" style="background-image: url('https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3'); cursor:pointer;" onclick="openModal('stock-market')">
+            <div class="overlay">
+                <h3>Stock Market</h3>
+                <span class="tech-stack">ML | LSTM</span>
+                <p>Predict market trends.</p>
+            </div>
+        </div>
+
+        <div class="project-card" style="background-image: url('https://images.unsplash.com/photo-1581092160607-ee22621dd758'); cursor:pointer;" onclick="openModal('arduino')">
+            <div class="overlay">
+                <h3>Arduino</h3>
+                <span class="tech-stack">Hardware</span>
+                <p>Bluetooth system.</p>
+            </div>
+        </div>
+
+        <div class="project-card" style="background-image: url('https://images.unsplash.com/photo-1511376777868-611b54f68947'); cursor:pointer;" onclick="openModal('podcast-ai')">
+            <div class="overlay">
+                <h3>Podcast AI</h3>
+                <span class="tech-stack">Whisper</span>
+                <p>Audio to text.</p>
+            </div>
+        </div>
+
+        <div class="project-card" style="background-image: url('https://images.unsplash.com/photo-1677442136019-21780ecad995'); cursor:pointer;" onclick="openModal('deepfake')">
+            <div class="overlay">
+                <h3>Deepfake</h3>
+                <span class="tech-stack">Django</span>
+                <p>Detect fake images.</p>
+            </div>
+        </div>
+
+        <div class="project-card" style="background-image: url('https://images.unsplash.com/photo-1586281380349-632531db7ed4'); cursor:pointer;" onclick="openModal('resume-builder')">
+            <div class="overlay">
+                <h3>Resume Builder</h3>
+                <span class="tech-stack">AI</span>
+                <p>ATS resume generator.</p>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<footer id="contact">
+    <h2>Contact</h2>
+    <div class="social-icons">
+        <a href="https://mail.google.com/mail/?view=cm&to=balmeetsinghchadha8@gmail.com&su=Portfolio%20Inquiry" target="_blank" rel="noopener noreferrer"><i class="fas fa-envelope"></i></a>
+        
+        <a href="https://github.com/BALMEETCHADHA" target="_blank"><i class="fab fa-github"></i></a>
+        
+        <a href="https://www.linkedin.com/in/balmeet-singh-chadha-a278782a8" target="_blank">
+            <i class="fab fa-linkedin"></i>
+        </a>
+    </div>
+</footer>
+
+<!-- PROJECT MODAL -->
+<div id="projectModal" style="display:none; position:fixed; top:0; left:0; width:100%; height:100%;
+  background:rgba(0,0,0,0.85); z-index:9999; justify-content:center; align-items:center;">
+  <div style="background:#161616; border:1px solid #00d2ff; border-radius:16px; padding:30px 35px;
+    max-width:600px; width:90%; position:relative; color:#e0e0e0; box-shadow: 0 0 40px rgba(0,210,255,0.2);">
+    <button onclick="closeModal()" style="position:absolute; top:15px; right:20px; background:none;
+      border:none; color:#00d2ff; font-size:28px; cursor:pointer; line-height:1;">&times;</button>
+    <h2 id="modalTitle" style="color:#00d2ff; margin-bottom:8px;"></h2>
+    <p id="modalTech" style="color:#888; font-size:13px; margin-bottom:15px; font-weight:bold;"></p>
+    <p id="modalDesc" style="line-height:1.8; color:#ccc; font-size:15px;"></p>
+  </div>
+</div>
+
+<!-- RESUME MODAL -->
+<div id="resumeModal" style="display:none; position:fixed; top:0; left:0; width:100%; height:100%;
+  background:rgba(0,0,0,0.85); z-index:9999; justify-content:center; align-items:center;">
+  <div style="background:#161616; border:1px solid #00d2ff; border-radius:16px; padding:25px;
+    max-width:800px; width:92%; height:88vh; position:relative; color:#e0e0e0; box-shadow: 0 0 40px rgba(0,210,255,0.2);
+    display:flex; flex-direction:column;">
+    <button onclick="closeResumeModal()" style="position:absolute; top:15px; right:20px; background:none;
+      border:none; color:#00d2ff; font-size:28px; cursor:pointer; line-height:1; z-index:2;">&times;</button>
+    <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:15px; padding-right:35px;">
+        <h2 style="color:#00d2ff;">Resume</h2>
+        <a id="resumeDownloadBtn" href="resume.pdf" download="Balmeet_Singh_Chadha_Resume.pdf" class="resume-link" style="padding:10px 22px; font-size:0.9rem;">
+            <i class="fas fa-download"></i> Download
+        </a>
+    </div>
+    <div id="resumeViewer" style="flex:1; width:100%; overflow-y:auto; border-radius:8px; background:#525659; padding:10px; display:flex; flex-direction:column; align-items:center; gap:10px;">
+        <img src="resume-page-1.png" alt="Resume page 1" style="max-width:100%; border-radius:4px; box-shadow:0 4px 15px rgba(0,0,0,0.4);">
+    </div>
+  </div>
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
